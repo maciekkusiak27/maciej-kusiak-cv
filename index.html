@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maciej Kusiak - Frontend Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="menu-icon">
+          <i class="fa fa-info-circle" onclick="toggleMenu()"></i>
+        </div>
+        <div class="info">
+          <h1>Maciej Kusiak</h1>
+          <h2>Frontend Developer</h2>
+          <span><i class="fa-solid fa-birthday-cake"></i> 27-02-1999</span>
+          <span
+            ><i class="fa-solid fa-briefcase"></i> Currently working at
+            <b>Paidworks</b></span
+          >
+          <span
+            ><i class="fa-solid fa-location-dot"></i> Remote / Kraków /
+            Myślenice</span
+          >
+          <span
+            ><a href="mailto:maciekkusiak27@gmail.com"
+              ><i class="fa-solid fa-envelope"></i> Email:
+              maciekkusiak27@gmail.com</a
+            ></span
+          >
+          <span
+            ><a href="https://github.com/maciekkusiak27" target="_blank"
+              ><i class="fa-brands fa-github"></i> GitHub: maciekkusiak27</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://www.linkedin.com/in/maciej-kusiak-21199b208/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            ></span
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="hexagon">
+        <img src="https://via.placeholder.com/160" alt="Profile Photo" />
+        <ul class="desktop-menu">
+          <li>
+            <a href="#" onclick="showSection('experience')">EXPERIENCE</a>
+          </li>
+          <li><a href="#" onclick="showSection('projects')">PROJECTS</a></li>
+          <li><a href="#" onclick="showSection('courses')">COURSES</a></li>
+          <li><a href="#" onclick="showSection('hobbys')">HOBBYS</a></li>
+          <li><a href="#" onclick="showSection('education')">EDUCATION</a></li>
+          <li><a href="#" onclick="showSection('web-pages')">WEB PAGES</a></li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-row">
+          <a href="#" onclick="showSection('experience')">EXPERIENCE</a>
+          <a href="#" onclick="showSection('projects')">PROJECTS</a>
+          <a href="#" onclick="showSection('courses')">COURSES</a>
+        </div>
+        <img src="https://via.placeholder.com/160" alt="Profile Photo" />
+        <div class="mobile-row">
+          <a href="#" onclick="showSection('education')">EDUCATION</a>
+          <a href="#" onclick="showSection('web-pages')">WEB PAGES</a>
+          <a href="#" onclick="showSection('hobbys')">HOBBYS</a>
+        </div>
+      </div>
+
+      <div id="experience" class="content">
+        <section>
+          <button class="close-btn" onclick="closeSection()">X</button>
+          <h2>Experience</h2>
+          <div class="exp-item exp-current">
+            <img src="assets/images/paidwork.jpg" alt="Paidwork Logo" />
+            <div>
+              <h3>Paidwork</h3>
+              <strong>Junior frontend developer</strong>
+              <span>July 2024 - now</span>
+              <p>
+                Technologies: JavaScript, jQuery, PHP, HTML, CSS, MySQL, GitHub
+              </p>
+              <p>Responsibilities: Solving frontend tasks</p>
+            </div>
+          </div>
+          <div class="exp-item">
+            <img
+              src="assets/images/futurum.png"
+              alt="Futurum Technology LTD Logo"
+            />
+            <div>
+              <h3>Futurum Technology LTD</h3>
+              <strong>Junior frontend developer</strong>
+              <span>November 2023 - August 2024</span>
+              <p>
+                Technologies: JavaScript, Angular, HTML, CSS, SCSS, RxJS,
+                TypeScript, Angular Material Design, GitHub
+              </p>
+              <p>Responsibilities:</p>
+              <ul>
+                <li>
+                  Development of Comiere application in the healthcare sector
+                </li>
+                <li>Working in an international team in English</li>
+                <li>
+                  Implementing new components, fixing old ones, and refactoring
+                  web pages
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-item">
+            <img src="assets/images/comarch.png" alt="Comarch SA Logo" />
+            <div>
+              <h3>Comarch SA</h3>
+              <strong>Junior frontend developer</strong>
+              <span>September 2022 - June 2023</span>
+              <p>
+                Technologies: Angular, JavaScript, TypeScript, HTML, CSS, SCSS,
+                RxJS, Material Design, Jira, GitLab
+              </p>
+              <ul>
+                <li>Development of ERP system Egeria 8</li>
+                <li>working in a Scrum team</li>
+                <li>daily meetings</li>
+                <li>implementing new components</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-item">
+            <img src="assets/images/comarch.png" alt="Comarch SA Logo" />
+            <div>
+              <h3>Comarch SA</h3>
+              <strong>Intern frontend developer</strong>
+              <span>July 2022 - September 2023</span>
+              <p>
+                Technologies: Angular, JavaScript, TypeScript, HTML, CSS, SCSS,
+                RxJS, Material Design, Jira, GitLab
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="projects" class="content">
+        <section>
+          <button class="close-btn" onclick="closeSection()">X</button>
+          <h2>Projects</h2>
+          <div class="project-item">
+            <div>
+              <strong>Bus Departure App:</strong> An application that checks bus
+              departures based on an external JSON file, written in Angular. It
+              served me during the first semester of my master's studies.
+              <div class="icons-flex">
+                <a
+                  href="https://github.com/maciekkusiak27/busola-angular"
+                  target="_blank"
+                  title="GitHub Repository"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://maciekkusiak27.github.io/busola-angular/"
+                  target="_blank"
+                  title="Deployed Application"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div>
+              <strong>Comiere:</strong> A project I co-developed while working
+              at Futurum Technology for 6 months.
+              <div class="icons-flex">
+                <a
+                  href="https://webapp.comiere.com/"
+                  target="_blank"
+                  title="Deployed Application"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div>
+              <strong>Egeria 8:</strong> A project I co-developed while working
+              at Comarch for a year.
+            </div>
+          </div>
+          <div class="project-item">
+            <div>
+              <strong>Job Search App:</strong> An application developed to learn
+              Electron and gather job search websites in one place. Link to the
+              repository.
+              <div class="icons-flex">
+                <a
+                  href="https://github.com/your-repo/job-search-app"
+                  target="_blank"
+                  title="GitHub Repository"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div>
+              <strong>Campaign Management App:</strong> An interesting
+              recruitment task where I created a CRUD application for various
+              campaigns. Link to the repository.
+              <div class="icons-flex">
+                <a
+                  href="https://github.com/your-repo/campaign-management"
+                  target="_blank"
+                  title="GitHub Repository"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://cheery-pie-00705b.netlify.app/"
+                  target="_blank"
+                  title="Website"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div>
+              <strong>Daddy:</strong> A project I co-developed while working at
+              Futurum Technology for a month.
+              <div class="icons-flex">
+                <a
+                  href="https://daddy.futurum.tech/"
+                  target="_blank"
+                  title="Website"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+         
+          <div class="project-item">
+            <div>
+              <strong>Adwokat Kowalska:</strong> A one-page website for a law
+              firm.
+              <div class="icons-flex">
+                <a
+                  href="https://github.com/your-repo/adwokatkowalska"
+                  target="_blank"
+                  title="GitHub Repository"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://adwokatkowalska.pl/"
+                  target="_blank"
+                  title="Website"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div>
+              <strong>Panaceum:</strong> A website ready for hosting, currently
+              awaiting deployment.
+              <div class="icons-flex">
+                <a
+                  href="https://github.com/your-repo/panaceum"
+                  target="_blank"
+                  title="GitHub Repository"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://maciekkusiak27.github.io/panaceum-net/"
+                  target="_blank"
+                  title="Website"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div>
+              <strong>Futurum:</strong> a website that I corrected and improved
+              while working at Futurum Technology.
+              <div class="icons-flex">
+                <a
+                  href="https://www.futurum.tech/"
+                  target="_blank"
+                  title="Website"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div>
+              <strong>Futurum Kursy:</strong> a website that I corrected and
+              improved while working at Futurum Technology.
+              <div class="icons-flex">
+                <a
+                  href="https://www.futurumkurs.pl/"
+                  target="_blank"
+                  title="Website"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="courses" class="content">
+        <section>
+          <button class="close-btn" onclick="closeSection()">X</button>
+          <h2>Courses</h2>
+          <div class="courses-list">
+            <ul>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/the-complete-guide-to-angular-2/"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>The Complete Guide to Angular 2:</strong>
+                </a>
+                Comprehensive course on Angular 2 covering all aspects of
+                development.
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/kurs-programowanie-w-javascript"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>JavaScript Programming:</strong>
+                </a>
+                In-depth course on JavaScript programming from basics to
+                advanced topics.
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/front-end-zaawansowany"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>Advanced Front-End Development:</strong>
+                </a>
+                A comprehensive course for advanced front-end development
+                techniques.
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/kurs-react-od-podstaw"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>React from Scratch:</strong>
+                </a>
+                Learn the basics of React from this beginner-friendly course.
+              </li>
+
+              <li>
+                <a
+                  href="https://www.udemy.com/course/reactjs-for-ecommerce-building-a-store-with-reactjs"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>ReactJS for eCommerce:</strong>
+                </a>
+                Build a fully functional eCommerce store with ReactJS.
+              </li>
+
+              <li>
+                <a
+                  href="https://www.udemy.com/course/learn-tailwind-css-quickly"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>Learn Tailwind CSS Quickly:</strong>
+                </a>
+                Get up to speed with Tailwind CSS in this fast-paced course.
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/pisz-szybszy-i-wydajniejszy-kod-html-i-css"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>Write Faster and More Efficient HTML and CSS:</strong>
+                </a>
+                Tips and tricks for writing efficient HTML and CSS code.
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/kurs-git-i-github-od-podstaw"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>Git and GitHub from Scratch:</strong>
+                </a>
+                Learn version control with Git and GitHub from the ground up.
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/javascript-asynchronicznosc"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>Asynchronous JavaScript:</strong>
+                </a>
+                Master asynchronous programming in JavaScript.
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/course/draft/4159714/learn/lecture/27324498#overview"
+                  target="_blank"
+                  title="Course Link"
+                >
+                  <strong>Creating websites on WordPress:</strong>
+                </a>
+                Learn the basics of Docker and containerization.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="education" class="content">
+      <section>
+        <button class="close-btn" onclick="closeSection()">X</button>
+        <h2>Education</h2>
+        <div class="ed-item">
+          <img src="assets/images/pk.png" alt="PK Logo" />
+          <div>
+            <h3>Cracow University of Technology</h3>
+            <strong>Applied Computer Science</strong>
+            <span>Masters degree</span>
+            <span>2023-2024</span>
+          </div>
+        </div>
+        <div class="ed-item">
+          <img src="assets/images/pk.png" alt="PK Logo" />
+          <div>
+            <h3>Cracow University of Technology</h3>
+            <strong>Applied Computer Science</strong>
+            <span>Bachelors degree</span>
+            <span>2019-2023</span>
+          </div>
+        </div>
+        <div class="ed-item">
+          <img src="assets/images/zsł.jfif" alt="ZSL Logo" />
+          <div>
+            <h3>Upper Secondary Schools of Communications</h3>
+            <strong>IT Technician</strong>
+            <span>2015-2019</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="web-pages" class="content">
+      <section>
+        <button class="close-btn" onclick="closeSection()">X</button>
+        <h2>Web Pages</h2>
+        <div class="web-page-item">
+          <iframe
+            src="https://adwokatkowalska.pl/"
+            title="Adwokat Kowalska"
+          ></iframe>
+          <div>
+            <strong>Adwokat Kowalska:</strong> This is a one-page website for a
+            law firm, developed using HTML, CSS, and JavaScript based on
+            provided guidelines. Hosted and deployed on OVH Cloud. It includes
+            static information about the firm, a map, and contact details.
+            <a
+              href="https://adwokatkowalska.pl/"
+              target="_blank"
+              title="Visit Adwokat Kowalska"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="web-page-item">
+          <iframe
+            src="https://maciekkusiak27.github.io/panaceum-net/"
+            title="Panaceum Net"
+          ></iframe>
+          <div>
+            <strong>Panaceum Net:</strong> A Single Page Application (SPA) ready
+            for hosting, currently awaiting the right moment for deployment.
+            Built with pure JavaScript, HTML, and CSS, with data fetched from a
+            JSON file stored on GitHub. Developed according to specifications
+            and will be further enhanced; it's my project and implementation.
+            <a
+              href="https://maciekkusiak27.github.io/panaceum-net/"
+              target="_blank"
+              title="Visit Panaceum Net"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="web-page-item">
+          <iframe
+            src="https://www.futurumkurs.pl/"
+            title="Futurum Kurs"
+          ></iframe>
+          <div>
+            <strong>Futurum Kurs:</strong> A website I refactored, adding
+            features like responsive web design (RWD) and mobile device
+            compatibility. Updated according to client requirements, it includes
+            a newsletter subscription and a contact form, along with animations.
+            <a
+              href="https://www.futurumkurs.pl/"
+              target="_blank"
+              title="Visit Futurum Kurs"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="web-page-item">
+          <iframe
+            src="https://www.futurum.tech/index.html"
+            title="Futurum Tech"
+          ></iframe>
+          <div>
+            <strong>Futurum Tech:</strong> Made several improvements, including
+            adding multi-language support, enhancing responsive web design
+            (RWD), implementing a trial sign-up feature, and fixing various bugs
+            and conversion issues.
+            <a
+              href="https://www.futurum.tech/index.html"
+              target="_blank"
+              title="Visit Futurum Tech"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="hobbys" class="content">
+      <section>
+        <button class="close-btn" onclick="closeSection()">X</button>
+        <h2>Hobbys</h2>
+        <p>Tu będą informacje o hobby...</p>
+      </section>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
