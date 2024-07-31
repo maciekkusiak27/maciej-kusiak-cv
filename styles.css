@@ -37,8 +37,7 @@ header a {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .hexagon img {
-  width: 160px;
-  height: 320px;
+  height: 640px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -213,6 +212,10 @@ header a {
   display: none;
 }
 
+h3{
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0 1rem;
@@ -245,6 +248,9 @@ header a {
     text-decoration: none;
     font-weight: bold;
     margin: 8px;
+  }
+  .mobile-menu img{
+    height: 320px;
   }
   .container {
     margin-top: 0;
