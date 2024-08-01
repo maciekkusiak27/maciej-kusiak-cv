@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Cracow University of Technology",
+      "degree": "Masters degree",
+      "field": "Applied Computer Science",
+      "dates": "2023-2024",
+      "logo": "assets/images/pk.png"
+    },
+    {
+      "title": "Cracow University of Technology",
+      "degree": "Bachelors degree",
+      "field": "Applied Computer Science",
+      "dates": "2019-2023",
+      "logo": "assets/images/pk.png"
+    },
+    {
+      "title": "Upper Secondary Schools of Communications",
+      "degree": "IT Technician",
+      "dates": "2015-2019",
+      "logo": "assets/images/zsł.jfif"
+    }
+  ]
+  

@@ -155,7 +155,6 @@ header a {
 
 .project-item{
   text-align: center;
-  /* margin: 8px; */
 }
 .project-item strong{
   margin-bottom: 16px;
@@ -164,6 +163,21 @@ header a {
   display: flex;
   flex-direction: column;
 }
+
+.hobbies-collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hobby-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .exp-item img,
 .ed-item img,
@@ -335,6 +349,12 @@ h3{
   .close-btn {
     top: 12px;
     right: 12px;
+  }
+  
+  .hobby-image {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
   }
 }
 @media (min-width: 768px) {

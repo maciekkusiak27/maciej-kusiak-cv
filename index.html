@@ -176,195 +176,18 @@
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
         <h2>Projects</h2>
-
-        <div class="section-grid">
-          <div class="project-item">
-            <div>
-              <strong>Bus Departure App:</strong> An application that checks bus
-              departures based on an external JSON file, written in Angular. It
-              served me during the first semester of my master's studies.
-              <div class="icons-flex">
-                <a
-                  href="https://github.com/maciekkusiak27/busola-angular"
-                  target="_blank"
-                  title="GitHub Repository"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  href="https://maciekkusiak27.github.io/busola-angular/"
-                  target="_blank"
-                  title="Deployed Application"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>CV Maciej Kusiak</strong> description here
-              <div class="icons-flex">
-                <a
-                  href="https://github.com/maciekkusiak27/maciej-kusiak-cv"
-                  target="_blank"
-                  title="GitHub Repository"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  href="https://maciekkusiak27.github.io/maciej-kusiak-cv/"
-                  target="_blank"
-                  title="Deployed Application"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Comiere:</strong> A project I co-developed while working
-              at Futurum Technology for 6 months.
-              <div class="icons-flex">
-                <a
-                  href="https://webapp.comiere.com/"
-                  target="_blank"
-                  title="Deployed Application"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Egeria 8:</strong> A project I co-developed while working
-              at Comarch for a year.
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Job Search App:</strong> An application developed to learn
-              Electron and gather job search websites in one place. Link to the
-              repository.
-              <div class="icons-flex">
-                <a
-                  href="https://github.com/your-repo/job-search-app"
-                  target="_blank"
-                  title="GitHub Repository"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Campaign Management App:</strong> An interesting
-              recruitment task where I created a CRUD application for various
-              campaigns. Link to the repository.
-              <div class="icons-flex">
-                <a
-                  href="https://github.com/your-repo/campaign-management"
-                  target="_blank"
-                  title="GitHub Repository"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  href="https://cheery-pie-00705b.netlify.app/"
-                  target="_blank"
-                  title="Website"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Daddy:</strong> A project I co-developed while working at
-              Futurum Technology for a month.
-              <div class="icons-flex">
-                <a
-                  href="https://daddy.futurum.tech/"
-                  target="_blank"
-                  title="Website"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-item">
-            <div>
-              <strong>Adwokat Kowalska:</strong> A one-page website for a law
-              firm.
-              <div class="icons-flex">
-                <a
-                  href="https://github.com/your-repo/adwokatkowalska"
-                  target="_blank"
-                  title="GitHub Repository"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  href="https://adwokatkowalska.pl/"
-                  target="_blank"
-                  title="Website"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Panaceum:</strong> A website ready for hosting, currently
-              awaiting deployment.
-              <div class="icons-flex">
-                <a
-                  href="https://github.com/your-repo/panaceum"
-                  target="_blank"
-                  title="GitHub Repository"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  href="https://maciekkusiak27.github.io/panaceum-net/"
-                  target="_blank"
-                  title="Website"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Futurum:</strong> a website that I corrected and improved
-              while working at Futurum Technology.
-              <div class="icons-flex">
-                <a
-                  href="https://www.futurum.tech/"
-                  target="_blank"
-                  title="Website"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-item">
-            <div>
-              <strong>Futurum Kursy:</strong> a website that I corrected and
-              improved while working at Futurum Technology.
-              <div class="icons-flex">
-                <a
-                  href="https://www.futurumkurs.pl/"
-                  target="_blank"
-                  title="Website"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="section-grid" id="projects-container"></div>
       </section>
     </div>
+    
 
     <div id="courses" class="content">
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
         <h2>Courses</h2>
+        <p>One of my methods for learning is taking courses, and here are a few that I've had the pleasure of participating in—some of them I have completed, some are mostly completed, and some are continuously updated.</p>
+        
+        <h3>Favourites</h3>
         <div class="courses-list">
           <ul>
             <li>
@@ -375,8 +198,7 @@
               >
                 <strong>The Complete Guide to Angular 2:</strong>
               </a>
-              Comprehensive course on Angular 2 covering all aspects of
-              development.
+              Comprehensive course on Angular 2 covering all aspects of development.
             </li>
             <li>
               <a
@@ -386,8 +208,7 @@
               >
                 <strong>JavaScript Programming:</strong>
               </a>
-              In-depth course on JavaScript programming from basics to advanced
-              topics.
+              In-depth course on JavaScript programming from basics to advanced topics.
             </li>
             <li>
               <a
@@ -397,8 +218,7 @@
               >
                 <strong>Advanced Front-End Development:</strong>
               </a>
-              A comprehensive course for advanced front-end development
-              techniques.
+              A comprehensive course for advanced front-end development techniques.
             </li>
             <li>
               <a
@@ -410,7 +230,6 @@
               </a>
               Learn the basics of React from this beginner-friendly course.
             </li>
-
             <li>
               <a
                 href="https://www.udemy.com/course/reactjs-for-ecommerce-building-a-store-with-reactjs"
@@ -421,7 +240,12 @@
               </a>
               Build a fully functional eCommerce store with ReactJS.
             </li>
-
+          </ul>
+        </div>
+    
+        <h3>Other Courses</h3>
+        <div class="courses-list">
+          <ul>
             <li>
               <a
                 href="https://www.udemy.com/course/learn-tailwind-css-quickly"
@@ -468,14 +292,23 @@
                 target="_blank"
                 title="Course Link"
               >
-                <strong>Creating websites on WordPress:</strong>
+                <strong>Creating Websites on WordPress:</strong>
               </a>
-              Learn the basics of Docker and containerization.
+              Learn the basics of WordPress.
             </li>
+          </ul>
+        </div>
+    
+        <h3>Currently working on</h3>
+        <div class="courses-list">
+          <ul>
+            <li>Course TBD (to be done in free time)</li>
           </ul>
         </div>
       </section>
     </div>
+    
+    
 
     <div id="education" class="content">
       <section>
@@ -608,8 +441,11 @@
     <div id="hobbys" class="content">
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
-        <h2>Hobbys</h2>
-        <p>Tu będą informacje o hobby...</p>
+        <h2>Hobbies</h2>
+        <p>Here are some of my non-programming interests :P</p>
+        <div id="hobbies-collage" class="hobbies-collage">
+         
+        </div>
       </section>
     </div>
 

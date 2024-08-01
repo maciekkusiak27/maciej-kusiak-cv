@@ -1,0 +1,43 @@
+[
+    {
+      "company": "Paidwork",
+      "position": "Junior frontend developer",
+      "dates": "July 2024 - now",
+      "technologies": "JavaScript, jQuery, PHP, HTML, CSS, MySQL, GitHub",
+      "responsibilities": "Solving frontend tasks",
+      "logo": "assets/images/paidwork.jpg"
+    },
+    {
+      "company": "Futurum Technology LTD",
+      "position": "Junior frontend developer",
+      "dates": "November 2023 - August 2024",
+      "technologies": "JavaScript, Angular, HTML, CSS, SCSS, RxJS, TypeScript, Angular Material Design, GitHub",
+      "responsibilities": [
+        "Development of Comiere application in the healthcare sector",
+        "Working in an international team in English",
+        "Implementing new components, fixing old ones, and refactoring web pages"
+      ],
+      "logo": "assets/images/futurum.png"
+    },
+    {
+      "company": "Comarch SA",
+      "position": "Junior frontend developer",
+      "dates": "September 2022 - June 2023",
+      "technologies": "Angular, JavaScript, TypeScript, HTML, CSS, SCSS, RxJS, Material Design, Jira, GitLab",
+      "responsibilities": [
+        "Development of ERP system Egeria 8",
+        "Working in a Scrum team",
+        "Daily meetings",
+        "Implementing new components"
+      ],
+      "logo": "assets/images/comarch.png"
+    },
+    {
+      "company": "Comarch SA",
+      "position": "Intern frontend developer",
+      "dates": "July 2022 - September 2023",
+      "technologies": "Angular, JavaScript, TypeScript, HTML, CSS, SCSS, RxJS, Material Design, Jira, GitLab",
+      "logo": "assets/images/comarch.png"
+    }
+  ]
+  

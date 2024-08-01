@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Adwokat Kowalska",
+      "description": "This is a one-page website for a law firm, developed using HTML, CSS, and JavaScript based on provided guidelines. Hosted and deployed on OVH Cloud. It includes static information about the firm, a map, and contact details.",
+      "url": "https://adwokatkowalska.pl/",
+      "iframeSrc": "https://adwokatkowalska.pl/"
+    },
+    {
+      "title": "Panaceum Net",
+      "description": "A Single Page Application (SPA) ready for hosting, currently awaiting the right moment for deployment. Built with pure JavaScript, HTML, and CSS, with data fetched from a JSON file stored on GitHub. Developed according to specifications and will be further enhanced; it's my project and implementation.",
+      "url": "https://maciekkusiak27.github.io/panaceum-net/",
+      "iframeSrc": "https://maciekkusiak27.github.io/panaceum-net/"
+    },
+    {
+      "title": "My CV",
+      "description": "opis",
+      "url": "https://github.com/maciekkusiak27/maciej-kusiak-cv",
+      "iframeSrc": "https://maciekkusiak27.github.io/maciej-kusiak-cv/"
+    },
+    {
+      "title": "Futurum Kurs",
+      "description": "A website I refactored, adding features like responsive web design (RWD) and mobile device compatibility. Updated according to client requirements, it includes a newsletter subscription and a contact form, along with animations.",
+      "url": "https://www.futurumkurs.pl/",
+      "iframeSrc": "https://www.futurumkurs.pl/"
+    },
+    {
+      "title": "Futurum Tech",
+      "description": "Made several improvements, including adding multi-language support, enhancing responsive web design (RWD), implementing a trial sign-up feature, and fixing various bugs and conversion issues.",
+      "url": "https://www.futurum.tech/index.html",
+      "iframeSrc": "https://www.futurum.tech/index.html"
+    }
+  ]
+  

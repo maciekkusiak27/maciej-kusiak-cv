@@ -1,0 +1,64 @@
+{
+    "favourites": [
+      {
+        "title": "The Complete Guide to Angular 2",
+        "url": "https://www.udemy.com/course/the-complete-guide-to-angular-2/",
+        "description": "Comprehensive course on Angular 2 covering all aspects of development."
+      },
+      {
+        "title": "JavaScript Programming",
+        "url": "https://www.udemy.com/course/kurs-programowanie-w-javascript",
+        "description": "In-depth course on JavaScript programming from basics to advanced topics."
+      },
+      {
+        "title": "Advanced Front-End Development",
+        "url": "https://www.udemy.com/course/front-end-zaawansowany",
+        "description": "A comprehensive course for advanced front-end development techniques."
+      },
+      {
+        "title": "React from Scratch",
+        "url": "https://www.udemy.com/course/kurs-react-od-podstaw",
+        "description": "Learn the basics of React from this beginner-friendly course."
+      },
+      {
+        "title": "ReactJS for eCommerce",
+        "url": "https://www.udemy.com/course/reactjs-for-ecommerce-building-a-store-with-reactjs",
+        "description": "Build a fully functional eCommerce store with ReactJS."
+      }
+    ],
+    "otherCourses": [
+      {
+        "title": "Learn Tailwind CSS Quickly",
+        "url": "https://www.udemy.com/course/learn-tailwind-css-quickly",
+        "description": "Get up to speed with Tailwind CSS in this fast-paced course."
+      },
+      {
+        "title": "Write Faster and More Efficient HTML and CSS",
+        "url": "https://www.udemy.com/course/pisz-szybszy-i-wydajniejszy-kod-html-i-css",
+        "description": "Tips and tricks for writing efficient HTML and CSS code."
+      },
+      {
+        "title": "Git and GitHub from Scratch",
+        "url": "https://www.udemy.com/course/kurs-git-i-github-od-podstaw",
+        "description": "Learn version control with Git and GitHub from the ground up."
+      },
+      {
+        "title": "Asynchronous JavaScript",
+        "url": "https://www.udemy.com/course/javascript-asynchronicznosc",
+        "description": "Master asynchronous programming in JavaScript."
+      },
+      {
+        "title": "Creating Websites on WordPress",
+        "url": "https://www.udemy.com/course/draft/4159714/learn/lecture/27324498#overview",
+        "description": "Learn the basics of WordPress."
+      }
+    ],
+    "purchased": [
+      {
+        "title": "Node.js, Express and MongoDB",
+        "url": "https://www.udemy.com/course/kurs-nodejs-express-mongodb",
+        "description": "Course to be done in free time."
+      }
+    ]
+  }
+  
