@@ -1,0 +1,143 @@
+[
+    {
+      "title": "Bus Departure App",
+      "description": "An application that checks bus departures based on an external JSON file, written in Angular. It served me during the first semester of my master's studies.",
+      "links": [
+        {
+          "url": "https://github.com/maciekkusiak27/busola-angular",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        },
+        {
+          "url": "https://maciekkusiak27.github.io/busola-angular/",
+          "icon": "fa-solid fa-link",
+          "title": "Deployed Application"
+        }
+      ]
+    },
+    {
+      "title": "CV Maciej Kusiak",
+      "description": "description here",
+      "links": [
+        {
+          "url": "https://github.com/maciekkusiak27/maciej-kusiak-cv",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        },
+        {
+          "url": "https://maciekkusiak27.github.io/maciej-kusiak-cv/",
+          "icon": "fa-solid fa-link",
+          "title": "Deployed Application"
+        }
+      ]
+    },
+    {
+      "title": "Comiere",
+      "description": "A project I co-developed while working at Futurum Technology for 6 months.",
+      "links": [
+        {
+          "url": "https://webapp.comiere.com/",
+          "icon": "fa-solid fa-link",
+          "title": "Deployed Application"
+        }
+      ]
+    },
+    {
+      "title": "Egeria 8",
+      "description": "A project I co-developed while working at Comarch for a year.",
+      "links": []
+    },
+    {
+      "title": "Job Search App",
+      "description": "An application developed to learn Electron and gather job search websites in one place. Link to the repository.",
+      "links": [
+        {
+          "url": "https://github.com/your-repo/job-search-app",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        }
+      ]
+    },
+    {
+      "title": "Campaign Management App",
+      "description": "An interesting recruitment task where I created a CRUD application for various campaigns. Link to the repository.",
+      "links": [
+        {
+          "url": "https://github.com/your-repo/campaign-management",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        },
+        {
+          "url": "https://cheery-pie-00705b.netlify.app/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "title": "Daddy",
+      "description": "A project I co-developed while working at Futurum Technology for a month.",
+      "links": [
+        {
+          "url": "https://daddy.futurum.tech/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "title": "Adwokat Kowalska",
+      "description": "A one-page website for a law firm.",
+      "links": [
+        {
+          "url": "https://github.com/your-repo/adwokatkowalska",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        },
+        {
+          "url": "https://adwokatkowalska.pl/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "title": "Panaceum",
+      "description": "A website ready for hosting, currently awaiting deployment.",
+      "links": [
+        {
+          "url": "https://github.com/your-repo/panaceum",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        },
+        {
+          "url": "https://maciekkusiak27.github.io/panaceum-net/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "title": "Futurum",
+      "description": "A website that I corrected and improved while working at Futurum Technology.",
+      "links": [
+        {
+          "url": "https://www.futurum.tech/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "title": "Futurum Kursy",
+      "description": "A website that I corrected and improved while working at Futurum Technology.",
+      "links": [
+        {
+          "url": "https://www.futurumkurs.pl/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    }
+  ]
+  

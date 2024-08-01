@@ -42,48 +42,24 @@ function showSection(sectionId) {
     const coursesLink = document.querySelector("a[onclick=\"showSection('courses')\"]");
     const projectsLink = document.querySelector("a[onclick=\"showSection('projects')\"]");
     const profilePhoto = document.getElementById("profile-photo");
-  
-    experienceLink.addEventListener("mouseover", function() {
-      profilePhoto.src = "/assets/images/me/gora.png";
-    });
-  
-    experienceLink.addEventListener("mouseout", function() {
-      profilePhoto.src = "/assets/images/me/front.png";
-    });
-  
-    hobbysLink.addEventListener("mouseover", function() {
-      profilePhoto.src = "/assets/images/me/dol.png";
-    });
-  
-    hobbysLink.addEventListener("mouseout", function() {
-      profilePhoto.src = "/assets/images/me/front.png";
-    });
+    const mobileProfilePhoto = document.getElementById("mobile-profile-photo");
 
-    webPagesLink.addEventListener("mouseover", function() {
-      profilePhoto.src = "/assets/images/me/lgora.png";
-    });  
-    webPagesLink.addEventListener("mouseout", function() {
-      profilePhoto.src = "/assets/images/me/front.png";
-    });
+    function addHoverListeners(link, imgSrc) {
+      link.addEventListener("mouseover", function() {
+        profilePhoto.src = imgSrc;
+        mobileProfilePhoto.src = imgSrc;
+      });
 
-    educationLink.addEventListener("mouseover", function() {
-      profilePhoto.src = "/assets/images/me/ldol.png";
-    });  
-    educationLink.addEventListener("mouseout", function() {
-      profilePhoto.src = "/assets/images/me/front.png";
-    });
+      link.addEventListener("mouseout", function() {
+        profilePhoto.src = "/assets/images/me/front.png";
+        mobileProfilePhoto.src = "/assets/images/me/front.png";
+      });
+    }
 
-    projectsLink.addEventListener("mouseover", function() {
-      profilePhoto.src = "/assets/images/me/rgora.png";
-    });  
-    projectsLink.addEventListener("mouseout", function() {
-      profilePhoto.src = "/assets/images/me/front.png";
-    });
-
-    coursesLink.addEventListener("mouseover", function() {
-      profilePhoto.src = "/assets/images/me/rdol.png";
-    });  
-    coursesLink.addEventListener("mouseout", function() {
-      profilePhoto.src = "/assets/images/me/front.png";
-    });
+    addHoverListeners(experienceLink, "/assets/images/me/gora.png");
+    addHoverListeners(hobbysLink, "/assets/images/me/dol.png");
+    addHoverListeners(webPagesLink, "/assets/images/me/lgora.png");
+    addHoverListeners(educationLink, "/assets/images/me/ldol.png");
+    addHoverListeners(projectsLink, "/assets/images/me/rgora.png");
+    addHoverListeners(coursesLink, "/assets/images/me/rdol.png");
   });

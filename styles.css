@@ -5,13 +5,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f4f4f4;
   overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #f4f4f4;
 }
 header {
   position: fixed;
   left: 2rem;
   top: 2rem;
+  z-index: 2;
+  transition: 0.5s linear;
+  cursor: pointer;
 }
 header .info {
   display: flex;
@@ -29,6 +39,7 @@ header a {
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  z-index: 1;
 }
 .hexagon {
   position: relative;
@@ -43,6 +54,12 @@ header a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  transition: 0.2s linear;
+}
+
+.hexagon img:hover {
+  height: 680px;
+
 }
 .hexagon ul {
   list-style: none;
@@ -82,6 +99,11 @@ header a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+.section-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .content section {
@@ -131,6 +153,18 @@ header a {
   cursor: pointer;
 }
 
+.project-item{
+  text-align: center;
+  /* margin: 8px; */
+}
+.project-item strong{
+  margin-bottom: 16px;
+}
+.project-item > div{
+  display: flex;
+  flex-direction: column;
+}
+
 .exp-item img,
 .ed-item img,
 .project-item img {
@@ -141,14 +175,13 @@ header a {
 
 .exp-item > div,
 .ed-item > div,
-.project-item > div,
 .web-page-item > div {
   display: flex;
   flex-direction: column;
   margin-left: 32px;
 }
 .exp-current {
-  border: 2px solid yellow;
+  border: 2px solid #ffcc00;
   background-color: rgb(250, 250, 250);
 }
 .exp-item h3,
@@ -158,9 +191,8 @@ header a {
 }
 
 .web-page-item iframe {
-  width: 40%;
-  height: 300px;
   border: none;
+  border-radius: 20px;
 }
 
 .web-page-item a {
@@ -168,10 +200,7 @@ header a {
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.web-page-item a:hover {
-  color: #0056b3;
+  color: #222;
 }
 
 .fa-link {
@@ -201,6 +230,9 @@ header a {
   top: 30%;
   left: 10%;
 }
+.icons-flex{
+  margin-top: 16px;
+}
 .icons-flex > * {
   font-size: 32px;
   color: black;
@@ -220,7 +252,7 @@ h3{
   header {
     padding: 0 1rem;
     width: 100%;
-    background-color: yellow;
+    background-color: #ffcc00;
     position: fixed;
     left: 0;
     top: 0;
@@ -297,8 +329,18 @@ h3{
   .content section {
     margin: 16px;
   }
+  .section-grid{
+    grid-template-columns: 1fr;
+  }
   .close-btn {
     top: 12px;
     right: 12px;
+  }
+}
+@media (min-width: 768px) {
+  header:hover {
+    background-color: white;
+    top:0;
+    padding: 64px 32px 100vh ;
   }
 }
