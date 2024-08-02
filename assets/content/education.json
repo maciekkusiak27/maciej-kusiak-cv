@@ -3,21 +3,25 @@
       "title": "Cracow University of Technology",
       "degree": "Masters degree",
       "field": "Applied Computer Science",
-      "dates": "2023-2024",
-      "logo": "assets/images/pk.png"
+      "dates": "2023-2024, Cracow",
+      "logo": "assets/images/pk.png",
+      "thesis": "September 2024 - The topic of the diploma thesis was the creation and description of a website written in Angular, TypeScript, NodeJs with the NestJs framework, allowing for the automation of issuing licenses for Solid Works software to students and employees of the Krakow University of Technology"
     },
     {
       "title": "Cracow University of Technology",
       "degree": "Bachelors degree",
       "field": "Applied Computer Science",
-      "dates": "2019-2023",
-      "logo": "assets/images/pk.png"
+      "dates": "2019-2023, Cracow",
+      "logo": "assets/images/pk.png",
+      "thesis": "February 2023 - The diploma thesis is an analysis and description of the implementation of a web application for booking music studios, written in Angular, TypeScript, NodeJs with the NestJs framework."
     },
     {
       "title": "Upper Secondary Schools of Communications",
+      "field": "IT Technician",
       "degree": "IT Technician",
-      "dates": "2015-2019",
-      "logo": "assets/images/zsł.jfif"
+      "dates": "2015-2019, Cracow",
+      "logo": "assets/images/zsł.jfif",
+      "thesis": "Examinations confirming professional qualifications. E12, E13, E14"
     }
   ]
   

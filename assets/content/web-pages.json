@@ -13,8 +13,8 @@
     },
     {
       "title": "My CV",
-      "description": "opis",
-      "url": "https://github.com/maciekkusiak27/maciej-kusiak-cv",
+      "description": "A page on GithubPages that collects information about my career, education, projects and myself. I use hTML, CSS, JS and get data from JSON",
+      "url": "https://maciekkusiak27.github.io/maciej-kusiak-cv/",
       "iframeSrc": "https://maciekkusiak27.github.io/maciej-kusiak-cv/"
     },
     {

@@ -3,7 +3,7 @@
       {
         "title": "The Complete Guide to Angular 2",
         "url": "https://www.udemy.com/course/the-complete-guide-to-angular-2/",
-        "description": "Comprehensive course on Angular 2 covering all aspects of development."
+        "description": "The complete Angular 2 course by Maximilian Schwarzmüller. Very extensive and constantly updated, probably covering all important aspects of development."
       },
       {
         "title": "JavaScript Programming",
@@ -19,11 +19,6 @@
         "title": "React from Scratch",
         "url": "https://www.udemy.com/course/kurs-react-od-podstaw",
         "description": "Learn the basics of React from this beginner-friendly course."
-      },
-      {
-        "title": "ReactJS for eCommerce",
-        "url": "https://www.udemy.com/course/reactjs-for-ecommerce-building-a-store-with-reactjs",
-        "description": "Build a fully functional eCommerce store with ReactJS."
       }
     ],
     "otherCourses": [
@@ -33,14 +28,19 @@
         "description": "Get up to speed with Tailwind CSS in this fast-paced course."
       },
       {
-        "title": "Write Faster and More Efficient HTML and CSS",
-        "url": "https://www.udemy.com/course/pisz-szybszy-i-wydajniejszy-kod-html-i-css",
-        "description": "Tips and tricks for writing efficient HTML and CSS code."
-      },
-      {
         "title": "Git and GitHub from Scratch",
         "url": "https://www.udemy.com/course/kurs-git-i-github-od-podstaw",
         "description": "Learn version control with Git and GitHub from the ground up."
+      },
+      {
+        "title": "ReactJS for eCommerce",
+        "url": "https://www.udemy.com/course/reactjs-for-ecommerce-building-a-store-with-reactjs",
+        "description": "Build a fully functional eCommerce store with ReactJS."
+      },
+      {
+        "title": "Write Faster and More Efficient HTML and CSS",
+        "url": "https://www.udemy.com/course/pisz-szybszy-i-wydajniejszy-kod-html-i-css",
+        "description": "Tips and tricks for writing efficient HTML and CSS code."
       },
       {
         "title": "Asynchronous JavaScript",
@@ -57,7 +57,7 @@
       {
         "title": "Node.js, Express and MongoDB",
         "url": "https://www.udemy.com/course/kurs-nodejs-express-mongodb",
-        "description": "Course to be done in free time."
+        "description": "The last in the series of front-end Samurai programming courses, i.e. the basics of backend. In the future, I would also like to develop into a full-stack developer, so Node is the next stage for me."
       }
     ]
   }
