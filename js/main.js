@@ -1,7 +1,7 @@
 import { showSection, closeSection } from './sections.js';
 import { toggleMenu } from './menu.js';
 import { setupHoverListeners } from './hoverListeners.js';
-import { loadExperience, loadProjects, loadCourses, loadEducation, loadWebPages, loadHobbies } from './dataLoader.js';
+import { loadExperience, loadProjects, loadCourses, loadEducation, loadWebPages, loadHobbies, loadHeader } from './dataLoader.js';
 import { changePhoto, resetPhoto } from './photo.js';
 
 window.showSection = showSection;
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
   loadEducation();
   loadWebPages();
   loadHobbies();
+  loadHeader();
 
   document.querySelector(".menu-icon").addEventListener("click", toggleMenu);
 

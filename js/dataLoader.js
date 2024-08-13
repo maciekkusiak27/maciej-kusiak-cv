@@ -152,3 +152,24 @@ export function loadHobbies() {
       })
       .catch(error => console.error('Error loading hobbies:', error));
   }
+
+export  function loadHeader() {
+  fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/header.json')
+      .then(response => response.json())
+      .then(data => {
+        const headerContainer = document.querySelector('.header-container .info');
+  
+        headerContainer.innerHTML = `
+          <h1>${data.name}</h1>
+          <h2>${data.title}</h2>
+          <span><i class="fa-solid fa-birthday-cake"></i> ${data.birthday}</span>
+          <span><i class="fa-solid fa-briefcase"></i> ${data.currentWork.position} <b>${data.currentWork.company}</b></span>
+          <span><i class="fa-solid fa-location-dot"></i> ${data.location}</span>
+          <span><a href="mailto:${data.contact.email}"><i class="fa-solid fa-envelope"></i> Email: ${data.contact.email}</a></span>
+          <span><a href="${data.contact.github.url}" target="_blank"><i class="fa-brands fa-github"></i> GitHub: ${data.contact.github.username}</a></span>
+          <span><a href="${data.contact.linkedin.url}" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn: ${data.contact.linkedin.username}</a></span>
+          <span><a href="${data.cv.url}" download><i class="fa-solid fa-file-pdf"></i> ${data.cv.label}</a></span>
+        `;
+      })
+      .catch(error => console.error('Error loading header data:', error));
+  }

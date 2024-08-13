@@ -1,0 +1,25 @@
+{
+    "name": "Maciej Kusiak",
+    "title": "Frontend Developer",
+    "birthday": "27-02-1999",
+    "currentWork": {
+      "company": "-",
+      "position": "Currently working at"
+    },
+    "location": "Remote / Kraków / Myślenice",
+    "contact": {
+      "email": "maciekkusiak27@gmail.com",
+      "github": {
+        "url": "https://github.com/maciekkusiak27",
+        "username": "maciekkusiak27"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/maciej-kusiak-21199b208/",
+        "username": "maciej-kusiak-21199b208"
+      }
+    },
+    "cv": {
+      "url": "assets/Maciej Kusiak 082024.pdf",
+      "label": "CV w formacie PDF"
+    }
+  }
