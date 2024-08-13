@@ -58,6 +58,11 @@
         "title": "Node.js, Express and MongoDB",
         "url": "https://www.udemy.com/course/kurs-nodejs-express-mongodb",
         "description": "The last in the series of front-end Samurai programming courses, i.e. the basics of backend. In the future, I would also like to develop into a full-stack developer, so Node is the next stage for me."
+      },
+      {
+        "title": "The Complete Guide to Angular 2",
+        "url": "https://www.udemy.com/course/the-complete-guide-to-angular-2/",
+        "description": "This course is updated regularly"
       }
     ]
   }

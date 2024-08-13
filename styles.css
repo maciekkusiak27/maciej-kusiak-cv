@@ -15,6 +15,7 @@ body {
   z-index: 0;
   background-color: #f4f4f4;
 }
+
 header {
   position: fixed;
   left: 2rem;
@@ -23,17 +24,29 @@ header {
   transition: 0.5s linear;
   cursor: pointer;
 }
+
 header .info {
   display: flex;
   flex-direction: column;
 }
+
 header .info * {
   margin: 2px 0;
 }
+
 header a {
   text-decoration: none;
   color: #222;
 }
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -41,12 +54,14 @@ header a {
   margin-top: 100px;
   z-index: 1;
 }
+
 .hexagon {
   position: relative;
   width: 80vh;
   height: 80vh;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
 .hexagon img {
   height: 640px;
   position: absolute;
@@ -60,6 +75,7 @@ header a {
 .hexagon img:hover {
   height: 680px;
 }
+
 .hexagon ul {
   list-style: none;
   padding: 0;
@@ -70,11 +86,13 @@ header a {
   color: white;
   font-weight: bold;
 }
+
 .hexagon ul li {
   position: absolute;
   text-align: center;
   transform: translate(-50%, -50%);
 }
+
 .hexagon ul li a {
   color: #222;
   text-decoration: none;
@@ -82,6 +100,14 @@ header a {
   font-size: 1.5rem;
   z-index: 999;
 }
+
+.hexagon ul li:nth-child(1) { top: 10%; left: 50%; }
+.hexagon ul li:nth-child(2) { top: 30%; left: 90%; }
+.hexagon ul li:nth-child(3) { top: 70%; left: 90%; }
+.hexagon ul li:nth-child(4) { top: 90%; left: 50%; }
+.hexagon ul li:nth-child(5) { top: 70%; left: 10%; }
+.hexagon ul li:nth-child(6) { top: 30%; left: 10%; }
+
 .content {
   display: none;
   position: fixed;
@@ -100,17 +126,11 @@ header a {
   grid-template-rows: auto 1fr;
   gap: 20px;
 }
-.section-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.content section {
-  margin: 64px;
-}
+
 .content.active {
   right: 0;
 }
+
 .close-btn {
   position: absolute;
   top: 64px;
@@ -122,6 +142,17 @@ header a {
   padding: 10px;
   border-radius: 5px;
 }
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.content section {
+  margin: 64px;
+}
+
 .courses-list {
   background-color: white;
   padding: 20px;
@@ -129,10 +160,12 @@ header a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .courses-list li {
   list-style-type: none;
   margin: 8px 0;
 }
+
 .courses-list a {
   color: black;
   text-decoration: none;
@@ -152,20 +185,24 @@ header a {
   cursor: pointer; 
   margin-bottom: 16px;
 }
-.project-item, .web-page-item{
+
+.project-item, .web-page-item {
   flex-direction: column;
 }
-.exp-item p{
+
+.exp-item p {
   margin: 0;
 }
 
-.project-item{
+.project-item {
   text-align: center;
 }
-.project-item strong{
+
+.project-item strong {
   margin-bottom: 16px;
 }
-.project-item > div{
+
+.project-item > div {
   display: flex;
   flex-direction: column;
 }
@@ -184,7 +221,6 @@ header a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .exp-item img,
 .ed-item img,
 .project-item img {
@@ -200,10 +236,12 @@ header a {
   flex-direction: column;
   margin-left: 32px;
 }
+
 .exp-current {
   border: 2px solid #ffcc00;
   background-color: rgb(250, 250, 250);
 }
+
 .exp-item h3,
 .exp-item strong,
 .exp-item span {
@@ -229,48 +267,15 @@ header a {
 .fa-link {
   font-size: 1.5rem;
 }
-.hexagon ul li:nth-child(1) {
-  top: 10%;
-  left: 50%;
-}
-.hexagon ul li:nth-child(2) {
-  top: 30%;
-  left: 90%;
-}
-.hexagon ul li:nth-child(3) {
-  top: 70%;
-  left: 90%;
-}
-.hexagon ul li:nth-child(4) {
-  top: 90%;
-  left: 50%;
-}
-.hexagon ul li:nth-child(5) {
-  top: 70%;
-  left: 10%;
-}
-.hexagon ul li:nth-child(6) {
-  top: 30%;
-  left: 10%;
-}
-.icons-flex{
+
+.icons-flex {
   margin-top: 16px;
 }
+
 .icons-flex > * {
   font-size: 32px;
   color: black;
 }
-.menu-icon {
-  display: none;
-}
-.mobile-menu {
-  display: none;
-}
-
-h3{
-  margin: 0;
-}
-
 
 @media (max-width: 1100px) {
   .hexagon img {
@@ -289,14 +294,17 @@ h3{
     padding-bottom: 8px;
     overflow: hidden;
   }
+
   .menu-icon {
     font-size: 32px;
     display: block;
     color: #000;
   }
+
   .hexagon {
     display: none;
   }
+
   .mobile-menu {
     width: 100%;
     height: 100vh;
@@ -305,26 +313,32 @@ h3{
     align-items: center;
     justify-content: center;
   }
+
   .mobile-menu a {
     color: #222;
     text-decoration: none;
     font-weight: bold;
     margin: 8px;
   }
+
   .mobile-menu img {
     height: 320px;
   }
+
   .container {
     margin-top: 0;
   }
+
   header .info {
     display: none;
     flex-direction: column;
     height: 100vh;
   }
+
   header .info.active {
     display: flex;
   }
+
   header .info.active::before {
     content: "";
     position: absolute;
@@ -336,11 +350,13 @@ h3{
     z-index: -1;
     animation: slideDown 0.6s forwards;
   }
+
   @keyframes slideDown {
     to {
       top: 0;
     }
   }
+
   .exp-item,
   .ed-item,
   .project-item,
@@ -350,6 +366,7 @@ h3{
     border-radius: 10px;
     text-align: center;
   }
+
   .exp-item img,
   .ed-item img,
   .project-item img {
@@ -357,66 +374,71 @@ h3{
     height: 78px;
     margin: 16px;
   }
+
   .exp-item > div,
   .ed-item > div,
   .project-item > div,
   .web-page-item > div {
     margin-left: 0px;
   }
+
   .web-page-item iframe {
     border: none;
   }
+
   .content section {
     margin: 16px;
   }
+
   .section-grid {
     grid-template-columns: 1fr;
   }
+
   .close-btn {
     top: 12px;
     right: 12px;
   }
+
   .hobby-image {
     margin: 0 auto;
     width: 100px;
     height: 100px;
   }
+
   .hover-image {
     display: none;
   }
-  
+
   #mobile-profile-photo.hover-web-pages {
     content: url('/assets/images/me/lgora-min.png');
   }
-  
+
   #mobile-profile-photo.hover-experience {
     content: url('/assets/images/me/gora-min.png');
   }
-  
+
   #mobile-profile-photo.hover-projects {
     content: url('/assets/images/me/rgora-min.png');
   }
-  
+
   #mobile-profile-photo.hover-education {
     content: url('/assets/images/me/ldol-min.png');
   }
-  
+
   #mobile-profile-photo.hover-hobbys {
     content: url('/assets/images/me/dol-min.png');
   }
-  
+
   #mobile-profile-photo.hover-courses {
     content: url('/assets/images/me/rdol-min.png');
   }
 }
 
-
 @media (min-width: 768px) {
   header:hover {
     background-color: white;
-    top:0;
-    padding: 64px 32px 100vh ;
+    top: 0;
+    padding: 64px 32px 100vh;
     box-shadow: 0 100px rgba(0, 0, 0, 0.1);
-
   }
 }

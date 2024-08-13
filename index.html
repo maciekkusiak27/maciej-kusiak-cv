@@ -62,7 +62,7 @@
     <div class="container">
       <div class="hexagon">
         <img
-          src="/assets/images/me/front-min.png"
+          src="assets/images/me/front-min.png"
           id="profile-photo"
           alt="Profile Photo"
         />
@@ -85,7 +85,7 @@
           <a href="#" onclick="showSection('projects')">PROJECTS</a>
         </div>
         <img
-          src="/assets/images/me/front-min.png"
+          src="assets/images/me/front-min.png"
           id="mobile-profile-photo"
           alt="Profile Photo"
         />
@@ -103,7 +103,7 @@
         <div id="experience-container"></div>
       </section>
     </div>
-    
+
     <div id="projects" class="content">
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
@@ -111,12 +111,17 @@
         <div class="section-grid" id="projects-container"></div>
       </section>
     </div>
-    
+
     <div id="courses" class="content">
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
         <h2>Courses</h2>
-        <p>One of my methods for learning is taking courses, and here are a few that I've had the pleasure of participating in—some of them I have completed, some are mostly completed, and some are continuously updated.</p>
+        <p>
+          One of my methods for learning is taking courses, and here are a few
+          that I've had the pleasure of participating in—some of them I have
+          completed, some are mostly completed, and some are continuously
+          updated.
+        </p>
         <h3>Favourites</h3>
         <div class="courses-list" id="favourites-courses"></div>
         <h3>Other Courses</h3>
@@ -125,7 +130,7 @@
         <div class="courses-list" id="working-courses"></div>
       </section>
     </div>
-    
+
     <div id="education" class="content">
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
@@ -133,7 +138,7 @@
         <div id="education-container"></div>
       </section>
     </div>
-    
+
     <div id="web-pages" class="content">
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
@@ -141,7 +146,7 @@
         <div id="web-pages-container"></div>
       </section>
     </div>
-    
+
     <div id="hobbys" class="content">
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
@@ -150,9 +155,14 @@
         <div id="hobbies-collage" class="hobbies-collage"></div>
       </section>
     </div>
-    
 
-    <script src="./js/script.js"></script>
+    <script src="./js/utils.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/sections.js" type="module"></script>
+    <script src="./js/hoverListeners.js" type="module"></script>
+    <script src="./js/dataLoader.js" type="module"></script>
+    <script src="./js/photo.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
     <script src="./js/particles-config.js"></script>
   </body>
 </html>
