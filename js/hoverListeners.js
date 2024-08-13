@@ -14,15 +14,15 @@ export function setupHoverListeners() {
       });
   
       link.addEventListener("mouseout", function() {
-        profilePhoto.src = "/assets/images/me/front-min.png";
+        profilePhoto.src = "assets/images/me/front-min.png";
       });
     }
   
-    addHoverListeners(experienceLink, "/assets/images/me/gora-min.png");
-    addHoverListeners(hobbysLink, "/assets/images/me/dol-min.png");
-    addHoverListeners(webPagesLink, "/assets/images/me/lgora-min.png");
-    addHoverListeners(educationLink, "/assets/images/me/ldol-min.png");
-    addHoverListeners(projectsLink, "/assets/images/me/rgora-min.png");
-    addHoverListeners(coursesLink, "/assets/images/me/rdol-min.png");
+    addHoverListeners(experienceLink, "assets/images/me/gora-min.png");
+    addHoverListeners(hobbysLink, "assets/images/me/dol-min.png");
+    addHoverListeners(webPagesLink, "assets/images/me/lgora-min.png");
+    addHoverListeners(educationLink, "assets/images/me/ldol-min.png");
+    addHoverListeners(projectsLink, "assets/images/me/rgora-min.png");
+    addHoverListeners(coursesLink, "assets/images/me/rdol-min.png");
   }
   

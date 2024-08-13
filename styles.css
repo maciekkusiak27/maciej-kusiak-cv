@@ -410,27 +410,27 @@ header a {
   }
 
   #mobile-profile-photo.hover-web-pages {
-    content: url('/assets/images/me/lgora-min.png');
+    content: url('assets/images/me/lgora-min.png');
   }
 
   #mobile-profile-photo.hover-experience {
-    content: url('/assets/images/me/gora-min.png');
+    content: url('assets/images/me/gora-min.png');
   }
 
   #mobile-profile-photo.hover-projects {
-    content: url('/assets/images/me/rgora-min.png');
+    content: url('assets/images/me/rgora-min.png');
   }
 
   #mobile-profile-photo.hover-education {
-    content: url('/assets/images/me/ldol-min.png');
+    content: url('assets/images/me/ldol-min.png');
   }
 
   #mobile-profile-photo.hover-hobbys {
-    content: url('/assets/images/me/dol-min.png');
+    content: url('assets/images/me/dol-min.png');
   }
 
   #mobile-profile-photo.hover-courses {
-    content: url('/assets/images/me/rdol-min.png');
+    content: url('assets/images/me/rdol-min.png');
   }
 }
 
