@@ -1,7 +1,7 @@
 [
     {
       "title": "Bus Departure App",
-      "description": "An application that checks bus departures based on an external JSON file, written in Angular. It served me during the first semester of my master's studies.",
+      "description": "An application that checks bus departures on the Kraków-Myślenice route for the Kowal Bus and Koleje Małopolskie carriers and for several stops from which I departed. I could have expanded it to include the rest of the stops, but it turned out that Koleje Małopolskie, which I was traveling with, uses the website 'CzasPrzyleżje.pl', so it didn't make sense, because the GPS of the buses is also visible there, and my application only has departure dates from the timetable.",
       "links": [
         {
           "url": "https://github.com/maciekkusiak27/busola-angular",
@@ -17,7 +17,7 @@
     },
     {
       "title": "CV Maciej Kusiak",
-      "description": "A website collecting my information for my CV",
+      "description": "The exact page you are currently viewing. I didn't create it for the purpose of applying for job offers, because I don't believe that recruiters check such websites (let me know if I'm wrong :P), but rather for myself to group information that I can put in my CV, to collect it in one place. So this page simply groups my resume information, hence its informal nature.",
       "links": [
         {
           "url": "https://github.com/maciekkusiak27/maciej-kusiak-cv",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Comiere",
-      "description": "A project I co-developed while working at Futurum Technology for 6 months.",
+      "description": "A project I co-created for half a year while working at Futurum Technology. Application used by radiologists in the USA, written in Angular, TypeScript, SCSS.",
       "links": [
         {
           "url": "https://webapp.comiere.com/",
@@ -44,12 +44,12 @@
     },
     {
       "title": "Egeria 8",
-      "description": "A project I co-developed while working at Comarch for a year.",
+      "description": "A project I co-created while working at Comarch for a year. A huge ERP system in a microservice architecture with many departments and tabs. I worked in the finance team, so my tasks included corrections and new functionalities in the finance tabs. This was my first project with Angular, plus TS, SCSS and many internal tools.",
       "links": []
     },
     {
       "title": "Job Search App",
-      "description": "An application developed to learn Electron and gather job search websites in one place. Link to the repository.",
+      "description": "Browsing through job offers can be tiring, considering the multitude of places where various offers are advertised. In order to make browsing these offers easier, as well as to learn ElectronJS, which I had not worked with before, I wrote a simple application that displays, among others, JustJoin.it, Nofluffjobs, Indeed and several others in one place. I will be happy to develop it in the future with a better design and operation, as well as the ability to add your own pages.",
       "links": [
         {
           "url": "https://github.com/your-repo/job-search-app",
@@ -60,7 +60,7 @@
     },
     {
       "title": "Campaign Management App",
-      "description": "An interesting recruitment task where I created a CRUD application for various campaigns. Link to the repository.",
+      "description": "An interesting recruitment task in which I created a CRUD application for various campaigns and then hosted it on the Netlify platform. ",
       "links": [
         {
           "url": "https://github.com/your-repo/campaign-management",
@@ -76,7 +76,7 @@
     },
     {
       "title": "Daddy",
-      "description": "A project I co-developed while working at Futurum Technology for a month.",
+      "description": "A project I co-created for a month when I worked at Futurum Technology. A company management system written in Angular, used, among others, by Futurum. Angular 17 and good practices, my tasks included regular improvements in several places.",
       "links": [
         {
           "url": "https://daddy.futurum.tech/",
@@ -87,7 +87,7 @@
     },
     {
       "title": "Adwokat Kowalska",
-      "description": "A one-page website for a law firm.",
+      "description": "One-page website for a law firm, my first website for a client from design to deployment. The technologies used are JS, HTML, CSS, it contains the information expected by the client, it is responsive, has an iframe map and is available on the Internet. My first contact with domain, hosting and Google Search Console.",
       "links": [
         {
           "url": "https://github.com/your-repo/adwokatkowalska",
@@ -103,7 +103,7 @@
     },
     {
       "title": "Panaceum",
-      "description": "A website ready for hosting, currently awaiting deployment.",
+      "description": "The website of a music band also operating in the video industry, ready for hosting, is currently waiting for implementation. The technologies used are JS, HTML, CSS. Single Page Application was made using pure JavaScript, and data is downloaded from external json files, which will allow for easier management.",
       "links": [
         {
           "url": "https://github.com/your-repo/panaceum",
@@ -119,7 +119,7 @@
     },
     {
       "title": "Futurum",
-      "description": "A website that I corrected and improved while working at Futurum Technology.",
+      "description": "The Futurum Technology website, during the first month of working in the company, I made corrections to it and developed it on an ongoing basis with reported features. I am responsible, among other things, for improving responsiveness and for translating the website into various languages, I used PHP for this purpose.",
       "links": [
         {
           "url": "https://www.futurum.tech/",
@@ -130,7 +130,7 @@
     },
     {
       "title": "Futurum Kursy",
-      "description": "A website that I corrected and improved while working at Futurum Technology.",
+      "description": "A website I fixed while working for Futurum Technology, working with the client and her requirements. The website was written based on tables, I had to make it responsive and available for mobile devices, as required, add sliders, animations and a newsletter.",
       "links": [
         {
           "url": "https://www.futurumkurs.pl/",
