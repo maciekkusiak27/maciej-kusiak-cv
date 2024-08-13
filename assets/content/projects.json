@@ -1,20 +1,5 @@
 [
-    {
-      "title": "Bus Departure App",
-      "description": "An application that checks bus departures on the Kraków-Myślenice route for the Kowal Bus and Koleje Małopolskie carriers and for several stops from which I departed. I could have expanded it to include the rest of the stops, but it turned out that Koleje Małopolskie, which I was traveling with, uses the website 'CzasPrzyleżje.pl', so it didn't make sense, because the GPS of the buses is also visible there, and my application only has departure dates from the timetable.",
-      "links": [
-        {
-          "url": "https://github.com/maciekkusiak27/busola-angular",
-          "icon": "fa-brands fa-github",
-          "title": "GitHub Repository"
-        },
-        {
-          "url": "https://maciekkusiak27.github.io/busola-angular/",
-          "icon": "fa-solid fa-link",
-          "title": "Deployed Application"
-        }
-      ]
-    },
+   
     {
       "title": "CV Maciej Kusiak",
       "description": "The exact page you are currently viewing. I didn't create it for the purpose of applying for job offers, because I don't believe that recruiters check such websites (let me know if I'm wrong :P), but rather for myself to group information that I can put in my CV, to collect it in one place. So this page simply groups my resume information, hence its informal nature.",
@@ -48,6 +33,22 @@
       "links": []
     },
     {
+      "title": "Panaceum",
+      "description": "The website of a music band also operating in the video industry, ready for hosting, is currently waiting for implementation. The technologies used are JS, HTML, CSS. Single Page Application was made using pure JavaScript, and data is downloaded from external json files, which will allow for easier management.",
+      "links": [
+        {
+          "url": "https://github.com/your-repo/panaceum",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        },
+        {
+          "url": "https://maciekkusiak27.github.io/panaceum-net/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    },
+    {
       "title": "Job Search App",
       "description": "Browsing through job offers can be tiring, considering the multitude of places where various offers are advertised. In order to make browsing these offers easier, as well as to learn ElectronJS, which I had not worked with before, I wrote a simple application that displays, among others, JustJoin.it, Nofluffjobs, Indeed and several others in one place. I will be happy to develop it in the future with a better design and operation, as well as the ability to add your own pages.",
       "links": [
@@ -55,6 +56,22 @@
           "url": "https://github.com/your-repo/job-search-app",
           "icon": "fa-brands fa-github",
           "title": "GitHub Repository"
+        }
+      ]
+    },
+    {
+      "title": "Bus Departure App",
+      "description": "An application that checks bus departures on the Kraków-Myślenice route for the Kowal Bus and Koleje Małopolskie carriers and for several stops from which I departed. I could have expanded it to include the rest of the stops, but it turned out that Koleje Małopolskie, which I was traveling with, uses the website 'kiedyprzyjedzie.pl', so it didn't make sense, because the GPS of the buses is also visible there, and my application only has departure dates from the timetable.",
+      "links": [
+        {
+          "url": "https://github.com/maciekkusiak27/busola-angular",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        },
+        {
+          "url": "https://maciekkusiak27.github.io/busola-angular/",
+          "icon": "fa-solid fa-link",
+          "title": "Deployed Application"
         }
       ]
     },
@@ -101,22 +118,7 @@
         }
       ]
     },
-    {
-      "title": "Panaceum",
-      "description": "The website of a music band also operating in the video industry, ready for hosting, is currently waiting for implementation. The technologies used are JS, HTML, CSS. Single Page Application was made using pure JavaScript, and data is downloaded from external json files, which will allow for easier management.",
-      "links": [
-        {
-          "url": "https://github.com/your-repo/panaceum",
-          "icon": "fa-brands fa-github",
-          "title": "GitHub Repository"
-        },
-        {
-          "url": "https://maciekkusiak27.github.io/panaceum-net/",
-          "icon": "fa-solid fa-link",
-          "title": "Website"
-        }
-      ]
-    },
+    
     {
       "title": "Futurum",
       "description": "The Futurum Technology website, during the first month of working in the company, I made corrections to it and developed it on an ongoing basis with reported features. I am responsible, among other things, for improving responsiveness and for translating the website into various languages, I used PHP for this purpose.",

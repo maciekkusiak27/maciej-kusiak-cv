@@ -3,22 +3,31 @@ import { fetchData } from './utils.js';
 export function loadExperience() {
   fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/experience.json')
     .then(data => {
-      const container = document.getElementById('experience-container');
+      const experienceContainer = document.getElementById('experience-container');
+      const lessonsContainer = document.getElementById('lessons-container');
+
       data.forEach(exp => {
         const expElement = document.createElement('div');
         expElement.className = 'exp-item';
+        const logoHtml = exp.logo ? `<img src="${exp.logo}" alt="${exp.company} Logo" />` : '';
         expElement.innerHTML = `
-          <img src="${exp.logo}" alt="${exp.company} Logo" />
+          ${logoHtml}
           <div>
             <h3>${exp.company}</h3>
             <strong>${exp.position}</strong>
-            <span>${exp.dates}</span>
-            <p>Technologies: ${exp.technologies}</p>
-            <p>${exp.responsibilities}</p>
+            <i>${exp.dates}</i>
+            <p><b>Technologies:</b> ${exp.technologies}</p>
+            <p><b>Responsibilities:</b> ${exp.responsibilities}</p>
             ${exp.responsibilitiesList ? `<ul>${exp.responsibilitiesList.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
+            <p><b>Experience:</b> <i>${exp.experience}</i></p>
           </div>
         `;
-        container.appendChild(expElement);
+
+        if (exp.positive) {
+          experienceContainer.appendChild(expElement);
+        } else {
+          lessonsContainer.appendChild(expElement);
+        }
       });
     })
     .catch(error => console.error('Error loading experience:', error));
@@ -155,7 +164,6 @@ export function loadHobbies() {
 
 export  function loadHeader() {
   fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/header.json')
-      .then(response => response.json())
       .then(data => {
         const headerContainer = document.querySelector('.header-container .info');
   

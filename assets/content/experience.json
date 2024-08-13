@@ -2,10 +2,11 @@
     {
       "company": "Paidwork",
       "position": "Junior frontend developer",
-      "dates": "July 2024 - now",
+      "dates": "July 2024 - August 2024 (Notice of termination sent by me)",
       "technologies": "JavaScript, jQuery, PHP, HTML, CSS, MySQL, GitHub",
       "responsibilities": "Solving frontend tasks",
-      "logo": "assets/images/paidwork.jpg"
+      "experience": "A valuable lesson in verifying the employer before taking up a job.",
+      "positive":false
     },
     {
       "company": "Futurum Technology LTD",
@@ -17,7 +18,9 @@
         "Working in an international team in English",
         "Implementing new components, fixing old ones, and refactoring web pages"
       ],
-      "logo": "assets/images/futurum.png"
+      "logo": "assets/images/futurum.png",
+      "experience": "Working in a startup, the opportunity to see several projects, the opportunity to work with a client, a period of very intensive development on many levels, improving independence in programming. Working in English in an international team, Polish team composed of great people. A very valuable experience and a lot of inspiration to develop and work on myself",
+      "positive":true
     },
     {
       "company": "Comarch SA",
@@ -30,14 +33,18 @@
         "Daily meetings",
         "Implementing new components"
       ],
-      "logo": "assets/images/comarch.png"
+      "logo": "assets/images/comarch.png",
+      "experience": "A very valuable experience, I worked in a very large project in a team composed of very nice people, whom I still remember fondly. A period of intensive learning, mistakes and drawing conclusions, the opportunity to get to know a very large company, its structures, many internal systems, and various departments of the corporation. Valuable experience.",
+      "positive":true
     },
     {
       "company": "Comarch SA",
       "position": "Intern frontend developer",
       "dates": "July 2022 - September 2023",
       "technologies": "Angular, JavaScript, TypeScript, HTML, CSS, SCSS, RxJS, Material Design, Jira, GitLab",
-      "logo": "assets/images/comarch.png"
+      "logo": "assets/images/comarch.png",
+      "experience": "It was my first contact with professional work in IT and my first work with Angular. In addition to my first programming experience, I also learned how to work in a team, learned about GitLab and managing a scrum team in Jira. I learned about roles in programming teams. It was a very valuable experience for me.",
+      "positive":true
     }
   ]
   
