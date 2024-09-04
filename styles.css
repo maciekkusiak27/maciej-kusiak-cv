@@ -288,6 +288,15 @@ header a {
   }
 }
 
+@media (max-height: 900px) {
+  .hexagon img {
+    height: 320px;
+  }
+  .hexagon ul li a{
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0 1rem;
@@ -370,6 +379,7 @@ header a {
     padding: 4px;
     border-radius: 10px;
     text-align: center;
+    
   }
 
   .exp-item img,

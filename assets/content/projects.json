@@ -60,6 +60,17 @@
       ]
     },
     {
+      "title": "CV Generator",
+      "description": "I'm putting it in this tab even though the project is not finished yet. CV generator with the ability to download PDF files, a form with validations, written in Angular, and styled by Tailwind C",
+      "links": [
+        {
+          "url": "https://github.com/maciekkusiak27/cv-generator",
+          "icon": "fa-brands fa-github",
+          "title": "GitHub Repository"
+        }
+      ]
+    },
+    {
       "title": "Bus Departure App",
       "description": "An application that checks bus departures on the Kraków-Myślenice route for the Kowal Bus and Koleje Małopolskie carriers and for several stops from which I departed. I could have expanded it to include the rest of the stops, but it turned out that Koleje Małopolskie, which I was traveling with, uses the website 'kiedyprzyjedzie.pl', so it didn't make sense, because the GPS of the buses is also visible there, and my application only has departure dates from the timetable.",
       "links": [
@@ -136,6 +147,17 @@
       "links": [
         {
           "url": "https://www.futurumkurs.pl/",
+          "icon": "fa-solid fa-link",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "title": "Youtube Videos - React Native",
+      "description": "Unfinished application, but part of the recruitment task in react native",
+      "links": [
+        {
+          "url": "https://github.com/maciekkusiak27/youtube-videos-react-native",
           "icon": "fa-solid fa-link",
           "title": "Website"
         }
