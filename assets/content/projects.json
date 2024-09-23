@@ -168,11 +168,6 @@
     "technologies": ["JavaScript", "HTML", "CSS"],
     "links": [
       {
-        "url": "https://github.com/your-repo/adwokatkowalska",
-        "icon": "fa-brands fa-github",
-        "title": "GitHub Repository"
-      },
-      {
         "url": "https://adwokatkowalska.pl/",
         "icon": "fa-solid fa-link",
         "title": "Website"

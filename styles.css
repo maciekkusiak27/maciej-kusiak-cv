@@ -225,6 +225,11 @@ header a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#tech-filter{
+  padding: 5px;
+  margin-bottom: 16px;
+}
+
 .exp-item img,
 .ed-item img,
 .project-item img {

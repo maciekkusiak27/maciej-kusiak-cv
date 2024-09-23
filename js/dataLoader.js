@@ -1,15 +1,21 @@
-import { fetchData } from './utils.js';
+import { fetchData } from "./utils.js";
 
 export function loadExperience() {
-  fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/experience.json')
-    .then(data => {
-      const experienceContainer = document.getElementById('experience-container');
-      const lessonsContainer = document.getElementById('lessons-container');
+  fetchData(
+    "https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/experience.json"
+  )
+    .then((data) => {
+      const experienceContainer = document.getElementById(
+        "experience-container"
+      );
+      const lessonsContainer = document.getElementById("lessons-container");
 
-      data.forEach(exp => {
-        const expElement = document.createElement('div');
-        expElement.className = 'exp-item';
-        const logoHtml = exp.logo ? `<img src="${exp.logo}" alt="${exp.company} Logo" />` : '';
+      data.forEach((exp) => {
+        const expElement = document.createElement("div");
+        expElement.className = "exp-item";
+        const logoHtml = exp.logo
+          ? `<img src="${exp.logo}" alt="${exp.company} Logo" />`
+          : "";
         expElement.innerHTML = `
           ${logoHtml}
           <div>
@@ -18,7 +24,13 @@ export function loadExperience() {
             <i>${exp.dates}</i>
             <p><b>Technologies:</b> ${exp.technologies}</p>
             <p><b>Responsibilities:</b> ${exp.responsibilities}</p>
-            ${exp.responsibilitiesList ? `<ul>${exp.responsibilitiesList.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
+            ${
+              exp.responsibilitiesList
+                ? `<ul>${exp.responsibilitiesList
+                    .map((item) => `<li>${item}</li>`)
+                    .join("")}</ul>`
+                : ""
+            }
             <p><b>Experience:</b> <i>${exp.experience}</i></p>
           </div>
         `;
@@ -30,36 +42,42 @@ export function loadExperience() {
         }
       });
     })
-    .catch(error => console.error('Error loading experience:', error));
+    .catch((error) => console.error("Error loading experience:", error));
 }
 
-let allProjects = []; 
+let allProjects = [];
 
 export function loadProjects() {
-  fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/projects.json')
-    .then(data => {
-      allProjects = data;  // Store projects globally
-      displayProjects(data);  // Display all projects initially
+  fetchData(
+    "https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/projects.json"
+  )
+    .then((data) => {
+      allProjects = data;
+      displayProjects(data);
     })
-    .catch(error => console.error('Error loading projects:', error));
+    .catch((error) => console.error("Error loading projects:", error));
 }
 
 function displayProjects(projects) {
-  const container = document.getElementById('projects-container');
-  container.innerHTML = '';  // Clear existing projects
-  projects.forEach(project => {
-    const projectElement = document.createElement('div');
-    projectElement.className = 'project-item';
+  const container = document.getElementById("projects-container");
+  container.innerHTML = "";
+  projects.forEach((project) => {
+    const projectElement = document.createElement("div");
+    projectElement.className = "project-item";
     projectElement.innerHTML = `
       <div>
         <strong>${project.title}:</strong> ${project.description}
-        <p><b>Technologies:</b> ${project.technologies.join(', ')}</p>
+        <p><b>Technologies:</b> ${project.technologies.join(", ")}</p>
         <div class="icons-flex">
-          ${project.links.map(link => `
+          ${project.links
+            .map(
+              (link) => `
             <a href="${link.url}" target="_blank" title="${link.title}">
               <i class="${link.icon}"></i>
             </a>
-          `).join('')}
+          `
+            )
+            .join("")}
         </div>
       </div>
     `;
@@ -68,11 +86,11 @@ function displayProjects(projects) {
 }
 
 export function filterProjects() {
-  const selectedTech = document.getElementById('tech-filter').value;
-  if (selectedTech === 'all') {
-    displayProjects(allProjects); 
+  const selectedTech = document.getElementById("tech-filter").value;
+  if (selectedTech === "all") {
+    displayProjects(allProjects);
   } else {
-    const filteredProjects = allProjects.filter(project =>
+    const filteredProjects = allProjects.filter((project) =>
       project.technologies.includes(selectedTech)
     );
     displayProjects(filteredProjects);
@@ -80,14 +98,16 @@ export function filterProjects() {
 }
 
 export function loadCourses() {
-  fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/courses.json')
-    .then(data => {
-      const favContainer = document.getElementById('favourites-courses');
-      const otherContainer = document.getElementById('other-courses');
-      const workingContainer = document.getElementById('working-courses');
+  fetchData(
+    "https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/courses.json"
+  )
+    .then((data) => {
+      const favContainer = document.getElementById("favourites-courses");
+      const otherContainer = document.getElementById("other-courses");
+      const workingContainer = document.getElementById("working-courses");
 
-      data.favourites.forEach(course => {
-        const courseElement = document.createElement('li');
+      data.favourites.forEach((course) => {
+        const courseElement = document.createElement("li");
         courseElement.innerHTML = `
           <a href="${course.url}" target="_blank" title="Course Link">
             <strong>${course.title}:</strong>
@@ -97,8 +117,8 @@ export function loadCourses() {
         favContainer.appendChild(courseElement);
       });
 
-      data.otherCourses.forEach(course => {
-        const courseElement = document.createElement('li');
+      data.otherCourses.forEach((course) => {
+        const courseElement = document.createElement("li");
         courseElement.innerHTML = `
           <a href="${course.url}" target="_blank" title="Course Link">
             <strong>${course.title}:</strong>
@@ -108,8 +128,8 @@ export function loadCourses() {
         otherContainer.appendChild(courseElement);
       });
 
-      data.purchased.forEach(course => {
-        const courseElement = document.createElement('li');
+      data.purchased.forEach((course) => {
+        const courseElement = document.createElement("li");
         courseElement.innerHTML = `
           <a href="${course.url}" target="_blank" title="Course Link">
             <strong>${course.title}:</strong>
@@ -119,16 +139,18 @@ export function loadCourses() {
         workingContainer.appendChild(courseElement);
       });
     })
-    .catch(error => console.error('Error loading courses:', error));
+    .catch((error) => console.error("Error loading courses:", error));
 }
 
 export function loadEducation() {
-  fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/education.json')
-    .then(data => {
-      const container = document.getElementById('education-container');
-      data.forEach(ed => {
-        const edElement = document.createElement('div');
-        edElement.className = 'ed-item';
+  fetchData(
+    "https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/education.json"
+  )
+    .then((data) => {
+      const container = document.getElementById("education-container");
+      data.forEach((ed) => {
+        const edElement = document.createElement("div");
+        edElement.className = "ed-item";
         edElement.innerHTML = `
           <img src="${ed.logo}" alt="${ed.institution} Logo" />
           <div>
@@ -142,16 +164,18 @@ export function loadEducation() {
         container.appendChild(edElement);
       });
     })
-    .catch(error => console.error('Error loading education:', error));
+    .catch((error) => console.error("Error loading education:", error));
 }
 
 export function loadWebPages() {
-  fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/web-pages.json')
-    .then(data => {
-      const container = document.getElementById('web-pages-container');
-      data.forEach(page => {
-        const pageElement = document.createElement('div');
-        pageElement.className = 'web-page-item';
+  fetchData(
+    "https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/web-pages.json"
+  )
+    .then((data) => {
+      const container = document.getElementById("web-pages-container");
+      data.forEach((page) => {
+        const pageElement = document.createElement("div");
+        pageElement.className = "web-page-item";
         pageElement.innerHTML = `
           <iframe src="${page.url}" title="${page.title}"></iframe>
           <div>
@@ -164,31 +188,35 @@ export function loadWebPages() {
         container.appendChild(pageElement);
       });
     })
-    .catch(error => console.error('Error loading web pages:', error));
+    .catch((error) => console.error("Error loading web pages:", error));
 }
 
 export function loadHobbies() {
-    fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/hobbies.json')
-      .then(data => {
-        const container = document.getElementById('hobbies-collage');
-        data.forEach(hobby => {
-          const imgElement = document.createElement('img');
-          imgElement.src = hobby.image;
-          imgElement.alt = hobby.title;
-          imgElement.title = hobby.title;
-          imgElement.className = 'hobby-image';
-          container.appendChild(imgElement);
-        });
-      })
-      .catch(error => console.error('Error loading hobbies:', error));
-  }
+  fetchData(
+    "https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/hobbies.json"
+  )
+    .then((data) => {
+      const container = document.getElementById("hobbies-collage");
+      data.forEach((hobby) => {
+        const imgElement = document.createElement("img");
+        imgElement.src = hobby.image;
+        imgElement.alt = hobby.title;
+        imgElement.title = hobby.title;
+        imgElement.className = "hobby-image";
+        container.appendChild(imgElement);
+      });
+    })
+    .catch((error) => console.error("Error loading hobbies:", error));
+}
 
-export  function loadHeader() {
-  fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/header.json')
-      .then(data => {
-        const headerContainer = document.querySelector('.header-container .info');
-  
-        headerContainer.innerHTML = `
+export function loadHeader() {
+  fetchData(
+    "https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/header.json"
+  )
+    .then((data) => {
+      const headerContainer = document.querySelector(".header-container .info");
+
+      headerContainer.innerHTML = `
           <h1>${data.name}</h1>
           <h2>${data.title}</h2>
           <span><i class="fa-solid fa-birthday-cake"></i> ${data.birthday}</span>
@@ -199,6 +227,6 @@ export  function loadHeader() {
           <span><a href="${data.contact.linkedin.url}" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn: ${data.contact.linkedin.username}</a></span>
           <span><a href="${data.cv.url}" download><i class="fa-solid fa-file-pdf"></i> ${data.cv.label}</a></span>
         `;
-      })
-      .catch(error => console.error('Error loading header data:', error));
-  }
+    })
+    .catch((error) => console.error("Error loading header data:", error));
+}
