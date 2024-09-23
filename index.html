@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./js/utils.js" type="module" defer></script>
     <script src="./js/menu.js" type="module" defer></script>
     <script src="./js/sections.js" type="module" defer></script>
@@ -16,7 +15,6 @@
     <script src="./js/dataLoader.js" type="module" defer></script>
     <script src="./js/photo.js" type="module" defer></script>
     <script src="./js/main.js" type="module" defer></script>
-    <script src="./js/particles-config.js" defer></script>
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -83,9 +81,20 @@
       <section>
         <button class="close-btn" onclick="closeSection()">X</button>
         <h2>Projects</h2>
+        <select id="tech-filter" onchange="filterProjects()">
+          <option value="all">All</option>
+          <option value="Angular">Angular</option>
+          <option value="React">React</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="TypeScript">TypeScript</option>
+          <option value="NodeJS">NodeJS</option>
+          <option value="React Native">React Native</option>
+          <option value="Ionic">Ionic</option>
+        </select>
         <div class="section-grid" id="projects-container"></div>
       </section>
     </div>
+    
 
     <div id="courses" class="content">
       <section>

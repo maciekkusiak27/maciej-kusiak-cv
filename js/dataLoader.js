@@ -33,29 +33,50 @@ export function loadExperience() {
     .catch(error => console.error('Error loading experience:', error));
 }
 
+let allProjects = []; 
+
 export function loadProjects() {
   fetchData('https://raw.githubusercontent.com/maciekkusiak27/maciej-kusiak-cv/main/assets/content/projects.json')
     .then(data => {
-      const container = document.getElementById('projects-container');
-      data.forEach(project => {
-        const projectElement = document.createElement('div');
-        projectElement.className = 'project-item';
-        projectElement.innerHTML = `
-          <div>
-            <strong>${project.title}:</strong> ${project.description}
-            <div class="icons-flex">
-              ${project.links.map(link => `
-                <a href="${link.url}" target="_blank" title="${link.title}">
-                  <i class="${link.icon}"></i>
-                </a>
-              `).join('')}
-            </div>
-          </div>
-        `;
-        container.appendChild(projectElement);
-      });
+      allProjects = data;  // Store projects globally
+      displayProjects(data);  // Display all projects initially
     })
     .catch(error => console.error('Error loading projects:', error));
+}
+
+function displayProjects(projects) {
+  const container = document.getElementById('projects-container');
+  container.innerHTML = '';  // Clear existing projects
+  projects.forEach(project => {
+    const projectElement = document.createElement('div');
+    projectElement.className = 'project-item';
+    projectElement.innerHTML = `
+      <div>
+        <strong>${project.title}:</strong> ${project.description}
+        <p><b>Technologies:</b> ${project.technologies.join(', ')}</p>
+        <div class="icons-flex">
+          ${project.links.map(link => `
+            <a href="${link.url}" target="_blank" title="${link.title}">
+              <i class="${link.icon}"></i>
+            </a>
+          `).join('')}
+        </div>
+      </div>
+    `;
+    container.appendChild(projectElement);
+  });
+}
+
+export function filterProjects() {
+  const selectedTech = document.getElementById('tech-filter').value;
+  if (selectedTech === 'all') {
+    displayProjects(allProjects); 
+  } else {
+    const filteredProjects = allProjects.filter(project =>
+      project.technologies.includes(selectedTech)
+    );
+    displayProjects(filteredProjects);
+  }
 }
 
 export function loadCourses() {

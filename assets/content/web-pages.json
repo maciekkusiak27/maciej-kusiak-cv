@@ -1,10 +1,5 @@
 [
-    {
-      "title": "Adwokat Kowalska",
-      "description": "This is a one-page website for a law firm, developed using HTML, CSS, and JavaScript based on provided guidelines. Hosted and deployed on OVH Cloud. It includes static information about the firm, a map, and contact details.",
-      "url": "https://adwokatkowalska.pl/",
-      "iframeSrc": "https://adwokatkowalska.pl/"
-    },
+    
     {
       "title": "Panaceum Net",
       "description": "A Single Page Application (SPA) ready for hosting, currently awaiting the right moment for deployment. Built with pure JavaScript, HTML, and CSS, with data fetched from a JSON file stored on GitHub. Developed according to specifications and will be further enhanced; it's my project and implementation.",
@@ -16,6 +11,12 @@
       "description": "A page on GithubPages that collects information about my career, education, projects and myself. I use hTML, CSS, JS and get data from JSON",
       "url": "https://maciekkusiak27.github.io/maciej-kusiak-cv/",
       "iframeSrc": "https://maciekkusiak27.github.io/maciej-kusiak-cv/"
+    },
+    {
+      "title": "Adwokat Kowalska",
+      "description": "This is a one-page website for a law firm, developed using HTML, CSS, and JavaScript based on provided guidelines. Hosted and deployed on OVH Cloud. It includes static information about the firm, a map, and contact details.",
+      "url": "https://adwokatkowalska.pl/",
+      "iframeSrc": "https://adwokatkowalska.pl/"
     },
     {
       "title": "Futurum Kurs",
