@@ -56,6 +56,18 @@
     ]
   },
   {
+    "title": "BJ Projekt",
+    "description": "Website",
+    "technologies": ["JavaScript", "HTML", "CSS"],
+    "links": [
+      {
+        "url": "https://www.bjprojekt.pl",
+        "icon": "fa-solid fa-link",
+        "title": "Website"
+      }
+    ]
+  },
+  {
     "title": "CV Generator",
     "description": "I'm putting it in this tab even though the project is not finished yet. CV generator with the ability to download PDF files, a form with validations, written in Angular, and styled by Tailwind C",
     "technologies": ["Angular", "Tailwind CSS"],
@@ -96,6 +108,11 @@
     "description": "Recruitment task in Angular, view displaying a table of elements, simulation of data retrieval at application startup, editing. Angular, TypeScript and Rx-Angular",
     "technologies": ["Angular", "TypeScript", "Rx-Angular"],
     "links": [
+      {
+        "url": "https://maciekkusiak27.github.io/periodic-table/",
+        "icon": "fa-brands fa-github",
+        "title": "GitHub Repository"
+      },
       {
         "url": "https://github.com/maciekkusiak27/periodic-table",
         "icon": "fa-solid fa-link",
@@ -139,7 +156,7 @@
     "technologies": ["Angular", "TypeScript, Rest API"],
     "links": [
       {
-        "url": "https://github.com/your-repo/campaign-management",
+        "url": "https://github.com/maciekkusiak27/campaign-management-app",
         "icon": "fa-brands fa-github",
         "title": "GitHub Repository"
       },

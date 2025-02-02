@@ -1,50 +1,69 @@
 [
-    {
-      "company": "Paidwork",
-      "position": "Junior frontend developer",
-      "dates": "July 2024 - August 2024 (Notice of termination sent by me)",
-      "technologies": "JavaScript, jQuery, PHP, HTML, CSS, MySQL, GitHub",
-      "responsibilities": "Solving frontend tasks",
-      "experience": "A valuable lesson in verifying the employer before taking up a job.",
-      "positive":false
-    },
-    {
-      "company": "Futurum Technology LTD",
-      "position": "Junior frontend developer",
-      "dates": "November 2023 - August 2024",
-      "technologies": "JavaScript, Angular, HTML, CSS, SCSS, RxJS, TypeScript, Angular Material Design, GitHub",
-      "responsibilities": [
-        "Development of Comiere application in the healthcare sector",
-        "Working in an international team in English",
-        "Implementing new components, fixing old ones, and refactoring web pages"
-      ],
-      "logo": "assets/images/futurum.png",
-      "experience": "Working in a startup, the opportunity to see several projects, the opportunity to work with a client, a period of very intensive development on many levels, improving independence in programming. Working in English in an international team, Polish team composed of great people. A very valuable experience and a lot of inspiration to develop and work on myself",
-      "positive":true
-    },
-    {
-      "company": "Comarch SA",
-      "position": "Junior frontend developer",
-      "dates": "September 2022 - June 2023",
-      "technologies": "Angular, JavaScript, TypeScript, HTML, CSS, SCSS, RxJS, Material Design, Jira, GitLab",
-      "responsibilities": [
-        "Development of ERP system Egeria 8",
-        "Working in a Scrum team",
-        "Daily meetings",
-        "Implementing new components"
-      ],
-      "logo": "assets/images/comarch.png",
-      "experience": "A very valuable experience, I worked in a very large project in a team composed of very nice people, whom I still remember fondly. A period of intensive learning, mistakes and drawing conclusions, the opportunity to get to know a very large company, its structures, many internal systems, and various departments of the corporation. Valuable experience.",
-      "positive":true
-    },
-    {
-      "company": "Comarch SA",
-      "position": "Intern frontend developer",
-      "dates": "July 2022 - September 2023",
-      "technologies": "Angular, JavaScript, TypeScript, HTML, CSS, SCSS, RxJS, Material Design, Jira, GitLab",
-      "logo": "assets/images/comarch.png",
-      "experience": "It was my first contact with professional work in IT and my first work with Angular. In addition to my first programming experience, I also learned how to work in a team, learned about GitLab and managing a scrum team in Jira. I learned about roles in programming teams. It was a very valuable experience for me.",
-      "positive":true
-    }
-  ]
-  
+  {
+    "company": "Giganci Programowania",
+    "position": "Programming Trainer",
+    "dates": "November 2024 - Present",
+    "technologies": "Python, Scratch, ScratchJr",
+    "responsibilities": "Teaching two groups of students aged 6-7 and 13-19, introducing them to programming concepts, and guiding them through practical projects.",
+    "experience": "Developed skills in working with young people, managing groups, and effectively conveying technical knowledge. Gained great satisfaction from inspiring others to explore programming.",
+    "positive": true,
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fhH5bk4rPekP7W_mqFM1DP3VcLCx_-mCfQ&s"
+  },
+  {
+    "company": "Tele-Fonika",
+    "position": "Junior Technologist",
+    "dates": "November 2024 - Present",
+    "technologies": "Non-IT role",
+    "responsibilities": "Preparing offers and constructions for fiber optic cables.",
+    "experience": "Gained experience working with SAP and CRM systems.",
+    "positive": true,
+    "logo":"https://upload.wikimedia.org/wikipedia/commons/f/f7/Logo_Tele-Fonika_Kable.jpg"
+  },
+  {
+    "company": "Paidwork",
+    "position": "Junior frontend developer",
+    "dates": "July 2024 - August 2024 (Notice of termination sent by me)",
+    "technologies": "JavaScript, jQuery, PHP, HTML, CSS, MySQL, GitHub",
+    "responsibilities": "Solving frontend tasks",
+    "experience": "A valuable lesson in verifying the employer before taking up a job.",
+    "positive": false
+  },
+  {
+    "company": "Futurum Technology LTD",
+    "position": "Junior frontend developer",
+    "dates": "November 2023 - August 2024",
+    "technologies": "JavaScript, Angular, HTML, CSS, SCSS, RxJS, TypeScript, Angular Material Design, GitHub",
+    "responsibilities": [
+      "Development of Comiere application in the healthcare sector",
+      "Working in an international team in English",
+      "Implementing new components, fixing old ones, and refactoring web pages"
+    ],
+    "logo": "assets/images/futurum.png",
+    "experience": "Working in a startup, the opportunity to see several projects, the opportunity to work with a client, a period of very intensive development on many levels, improving independence in programming. Working in English in an international team, Polish team composed of great people. A very valuable experience and a lot of inspiration to develop and work on myself",
+    "positive": true
+  },
+  {
+    "company": "Comarch SA",
+    "position": "Junior frontend developer",
+    "dates": "September 2022 - June 2023",
+    "technologies": "Angular, JavaScript, TypeScript, HTML, CSS, SCSS, RxJS, Material Design, Jira, GitLab",
+    "responsibilities": [
+      "Development of ERP system Egeria 8",
+      "Working in a Scrum team",
+      "Daily meetings",
+      "Implementing new components"
+    ],
+    "logo": "assets/images/comarch.png",
+    "experience": "A very valuable experience, I worked in a very large project in a team composed of very nice people, whom I still remember fondly. A period of intensive learning, mistakes and drawing conclusions, the opportunity to get to know a very large company, its structures, many internal systems, and various departments of the corporation. Valuable experience.",
+    "positive": true
+  },
+  {
+    "company": "Comarch SA",
+    "position": "Intern frontend developer",
+    "dates": "July 2022 - September 2023",
+    "technologies": "Angular, JavaScript, TypeScript, HTML, CSS, SCSS, RxJS, Material Design, Jira, GitLab",
+    "logo": "assets/images/comarch.png",
+    "experience": "It was my first contact with professional work in IT and my first work with Angular. In addition to my first programming experience, I also learned how to work in a team, learned about GitLab and managing a scrum team in Jira. I learned about roles in programming teams. It was a very valuable experience for me.",
+    "positive": true
+  }
+]
