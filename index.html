@@ -38,32 +38,34 @@
           alt="Profile Photo"
         />
         <ul class="desktop-menu">
-          <li onclick="showSection('experience')">EXPERIENCE</li>
-          <li onclick="showSection('projects')">PROJECTS</li>
-          <li onclick="showSection('courses')">COURSES</li>
-          <li onclick="showSection('hobbys')">HOBBYS</li>
-          <li onclick="showSection('education')">EDUCATION</li>
-          <li onclick="showSection('web-pages')">WEB PAGES</li>
+          <li>
+            <a href="#" onclick="showSection('experience')">EXPERIENCE</a>
+          </li>
+          <li><a href="#" onclick="showSection('projects')">PROJECTS</a></li>
+          <li><a href="#" onclick="showSection('courses')">COURSES</a></li>
+          <li><a href="#" onclick="showSection('hobbys')">HOBBYS</a></li>
+          <li><a href="#" onclick="showSection('education')">EDUCATION</a></li>
+          <li><a href="#" onclick="showSection('web-pages')">WEB PAGES</a></li>
         </ul>
-        
-        <div class="mobile-menu">
-          <div class="mobile-row">
-            <li onclick="showSection('web-pages')">WEB PAGES</li>
-            <li onclick="showSection('experience')">EXPERIENCE</li>
-            <li onclick="showSection('projects')">PROJECTS</li>
-          </div>
-          <img
-            src="assets/images/me/front-min.png"
-            id="mobile-profile-photo"
-            alt="Profile Photo"
-          />
-          <div class="mobile-row">
-            <li onclick="showSection('education')">EDUCATION</li>
-            <li onclick="showSection('hobbys')">HOBBYS</li>
-            <li onclick="showSection('courses')">COURSES</li>
-          </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-row">
+          <a href="#" onclick="showSection('web-pages')">WEB PAGES</a>
+          <a href="#" onclick="showSection('experience')">EXPERIENCE</a>
+          <a href="#" onclick="showSection('projects')">PROJECTS</a>
         </div>
-        
+        <img
+          src="assets/images/me/front-min.png"
+          id="mobile-profile-photo"
+          alt="Profile Photo"
+        />
+        <div class="mobile-row">
+          <a href="#" onclick="showSection('education')">EDUCATION</a>
+          <a href="#" onclick="showSection('hobbys')">HOBBYS</a>
+          <a href="#" onclick="showSection('courses')">COURSES</a>
+        </div>
+      </div>
     </div>
     <div id="experience" class="content">
       <section>
